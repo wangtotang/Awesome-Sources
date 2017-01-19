@@ -11,7 +11,7 @@
 的类、方法和属性来压缩代码，减少程序包的体积大小；而混淆代码通过使用简短的名称，如a、b、c，来命名类、方法和变量名，增加
 程序被反编译的难度。
 
-![ProGuard Progress][https://github.com/wangtotang/Awesome-Sources/blob/master/pictures/Proguard_Progress.jpg]
+![ProGuard Progress](https://github.com/wangtotang/Awesome-Sources/blob/master/pictures/Proguard_Progress.jpg)
 
     PS：由于Java先被编译成.class字节码文件，然后在打成程序包，如war、jar和apk等，都很容易解压得到字节码文件，而字节码文
     件中包含几乎所有的程序信息，可以很容易被反编译出来得到完整的程序文件，被一些别有居心的人利用，不但无法保证版权，而且还
