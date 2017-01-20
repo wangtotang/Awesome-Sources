@@ -88,12 +88,12 @@
 
 ```
 　　现在我们尝试使用一下Keep选项，
-1. 保持一个Activity
+* 保持一个Activity
 ```ProGuard
 # 保持指定的类名，需要全路径类名
 -keep public class mypackage.MyActivity
 ```
-2. 保持一些成员方法
+* 保持一些成员方法
 ```ProGuard
 # 保持任意enum类中的static修饰values(),valueOf()方法
 # 参数类型也需要全路径类名
@@ -102,7 +102,7 @@
     public static ** valueOf(java.lang.String);
 }
 ```
-3. 保持一些成员名称
+* 保持一些成员名称
 ```ProGuard
 # 保持class$()方法名称,class$()方法是Java编译器实现构造的,无需理会
 -keepclassmembernames class * {
@@ -110,7 +110,7 @@
     java.lang.Class class$(java.lang.String, boolean);
 }
 ```
-4. 保持指定成员名称及其类名称
+* 保持指定成员名称及其类名称
 ```ProGuard
 # 保持含有native修饰的方法的类名称和native修饰的方法名称
 -keepclasseswithmembernames class * {
