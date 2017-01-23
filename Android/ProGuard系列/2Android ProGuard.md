@@ -27,6 +27,7 @@
 * `examples`文件夹放的是配置文件的例子；
 * `lib`文件夹放的是jar包程序；
 * 还有license和一些Android默认配置文件。
+　　
 　　我们来看一下`bin`目录下的proguard.bat,用文本编辑器打开，会看到以下内容：
 ```bat
 @ECHO OFF
