@@ -18,7 +18,7 @@
 
 　　在此目录下,有以下这么些资源：
 
- ![ProGuard Tools][ProGuard Tools]
+　![ProGuard Tools][ProGuard Tools]
 
 　　这些资源分别是：
 * `ant`文件夹放的是Ant构建工具的task配置文件;
