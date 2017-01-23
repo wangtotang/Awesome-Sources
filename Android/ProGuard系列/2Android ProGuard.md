@@ -14,7 +14,7 @@
 #### SDK中的ProGuard工具
 
 　　由于ProGuard的使用非常方便，它在Android开发中得到广泛应用。Google在SDK中集成ProGuard工具，它可以在Android SDK的
-`tools/proguard`目录下找到。
+`tools/proguard`目录下找到。　　　　
 　　在此目录下,有以下这么些资源：
 
  ![ProGuard Tools][ProGuard Tools]
