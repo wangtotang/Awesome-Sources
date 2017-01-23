@@ -17,7 +17,7 @@
 `tools/proguard`目录下找到。
 　　在此目录下,有以下这么些资源：
 
-![ProGuard Tools][ProGuard Tools]
+ ![ProGuard Tools][ProGuard Tools]
 　　
 
     PS:这里使用的Android SDK为25.2.5；
