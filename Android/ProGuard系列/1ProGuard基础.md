@@ -177,16 +177,14 @@ ProGuard。
 
 　　指令选项分成7种，这里只列出在Android中常用到的部分。
 
+##### I/O选项
 ```ProGuard
-# ------------------ Begin: I/O选项 ------------------
-
 # 不忽略类库中非public的类
 -dontskipnonpubliclibraryclasses
+```
 
-# ------------------ End  : I/O选项 ------------------
-
-# ------------------ Begin: Keep选项 ------------------
-
+##### Keep选项
+```ProGuard
 # 保持ILicensingService这个公共类，名称要使用全路径类名
 -keep public class com.google.vending.licensing.ILicensingService
 
@@ -213,17 +211,16 @@ ProGuard。
 -keepclasseswithmembernames class * {
     native <methods>;
 }
+```
 
-# ------------------ End  : Keep选项 ------------------
-
-# ------------------ Begin: 压缩选项 ------------------
-
+##### 压缩选项
+```ProGuard
 # 列出无用代码
 -printusage
+```
 
-# ------------------ End  : 压缩选项 ------------------
-
-# ------------------ Begin: 优化选项 ------------------
+##### 优化选项
+```ProGuard
 # 关闭优化
 -dontoptimize
 
@@ -237,11 +234,10 @@ ProGuard。
 
 # 允许提升访问修饰符，扩大可访问范围
 -allowaccessmodification
+```
 
-# ------------------ End  : 优化选项 ------------------
-
-# ------------------ Begin: 混淆选项 ------------------
-
+##### 混淆选项
+```ProGuard
 # 不使用大小写混合的类名（默认设置）
 # 混淆后的类名为小写
 -dontusemixedcaseclassnames
@@ -255,18 +251,16 @@ ProGuard。
 # 保持代码行号
 # 方便在异常分析中定位
 -keepattributes SourceFile,LineNumberTable
+```
 
-# ------------------ End  : 混淆选项 ------------------
-
-# ------------------ Begin: 预校验选项 ------------------
-
+##### 预校验选项
+```ProGuard
 # 关闭预校验
 -dontpreverify
+```
 
-# ------------------ End  : 预校验选项 ------------------
-
-# ------------------ Begin: 通用选项 ------------------
-
+##### 通用选项
+```ProGuard
 # 打印处理代码的信息，出现异常时，会打印完整栈追踪信息
 -verbose
 
@@ -280,9 +274,6 @@ ProGuard。
 
 # 不打印关于错误或缺省配置的说明信息
 -dontnote rx.internal.util.PlatformDependent
-
-# ------------------ End  : 通用选项 ------------------
-
 ```
     PS：优化名称清单（挺多的，简略写）：
     　  ● class/marking/final  #尽量使用final修饰类
@@ -300,4 +291,4 @@ ProGuard。
     https://stuff.mit.edu/afs/sipb/project/android/sdk/android-sdk-linux/tools/proguard/docs/index.html#manual/usage.html。
    [使用指南](https://stuff.mit.edu/afs/sipb/project/android/sdk/android-sdk-linux/tools/proguard/docs/index.html#manual/usage.html)
 
-[ProGuard Progress]:https://github.com/wangtotang/Awesome-Sources/blob/master/pictures/Proguard_Progress.png
+[ProGuard Progress]:https://github.com/wangtotang/Awesome-Sources/blob/master/pictures/ProGuard_Progress.png
