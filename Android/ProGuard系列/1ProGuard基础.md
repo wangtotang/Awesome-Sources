@@ -52,7 +52,17 @@
 内联方法；
 * 在混淆阶段，ProGuard保留作为入口点的类和类成员的原来名称，重命名非入口点的类和类成员；
 * 预校验阶段是唯一一个不用知道入口点的处理阶段。
-　　那入口点怎么来的呢？其实我们可以通过在ProGuard配置文件中使用Keep选项进行配置它。下面我们就开始学习如何使用ProGuard。
+　　那入口点怎么来的呢？其实我们可以通过在ProGuard配置文件中使用Keep选项进行配置它。在接下来一节，我们就开始学习如何使用
+ProGuard。
+
+#### 1.3 小结
+　　
+　　ProGuard处理代码有四个步骤，它们都是可选的，可以通过指令选项关闭；ProGuard通过入口点来递归处理代码，这入口点就是我们
+配置的需要保持的代码。学习如何配置ProGuard，这是使用ProGuard的最主要的部分。
+
+    PS：这一部分内容可以查看ProGuard介绍网页：
+    https://stuff.mit.edu/afs/sipb/project/android/sdk/android-sdk-linux/tools/proguard/docs/index.html#manual/introduction.html。
+   [ProGuard介绍](https://stuff.mit.edu/afs/sipb/project/android/sdk/android-sdk-linux/tools/proguard/docs/index.html#manual/introduction.html)
 
 ### 2 ProGuard基础语法
 
@@ -67,9 +77,9 @@
    * '`%`'表示基本类型,
    * '`***`'表示任意类型,
    * '`...`'表示多个参数,
-   * `<init>`表示构造方法
-   * `<fields>`表示字段
-   * `<methods>`表示方法
+   * `<init>`表示构造方法,
+   * `<fields>`表示字段,
+   * `<methods>`表示方法.
 
 #### 2.1 Keep选项
 
@@ -272,7 +282,6 @@
 
 # ------------------ End  : 通用选项 ------------------
 
-
 ```
     PS：优化名称清单（挺多的，简略写）：
     　  ● class/marking/final  #尽量使用final修饰类
@@ -280,5 +289,14 @@
     　  ● field/*              #字段优化相关
     　  ● method/*             #方法优化相关
     　  ● code/*               #代码优化相关
+
+#### 2.3 小结
+　　
+　　ProGuard的配置文件类似脚本文件，指令选项就是它的命令行。指令选项虽然有7种，不过Keep选项是ProGuard指令选项的主要部分，
+学习掌握Keep选项和常用的指令选项可以让我们使用Android ProGuard事半功倍。
+
+    PS：这一部分内容可以查看ProGuard使用指南：
+    https://stuff.mit.edu/afs/sipb/project/android/sdk/android-sdk-linux/tools/proguard/docs/index.html#manual/usage.html。
+   [使用指南](https://stuff.mit.edu/afs/sipb/project/android/sdk/android-sdk-linux/tools/proguard/docs/index.html#manual/usage.html)
 
 [ProGuard Progress]:https://github.com/wangtotang/Awesome-Sources/blob/master/pictures/Proguard_Progress.png
