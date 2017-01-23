@@ -45,7 +45,7 @@
 
 #### 1.2 工作原理
 　　
-　　在上面讲到，ProGuard检查出没有使用的代码，然后移除，它是如何发现没有使用的代码呢？这里就要引入一个入口点(Entry Point)
+    在上面讲到，ProGuard检查出没有使用的代码，然后移除，它是如何发现没有使用的代码呢？这里就要引入一个入口点(Entry Point)
 的概念。入口点是指被保持的代码，来决定哪些代码不被移除或者混淆。
 * 在压缩阶段，ProGuard会从入口点开始递归遍历，搜索哪些类和类成员被使用，而其余的没有使用的类和类成员就会被移除；
 * 在优化阶段，ProGuard会用private、static或者final来修饰非入口点的类和方法，无用的参数会被移除，还有将一些方法变成
@@ -58,7 +58,7 @@ ProGuard。
 
 #### 1.3 小结
 　　
-　　ProGuard处理代码有四个步骤，它们都是可选的，可以通过指令选项关闭；ProGuard通过入口点来递归处理代码，这入口点就是我们
+    ProGuard处理代码有四个步骤，它们都是可选的，可以通过指令选项关闭；ProGuard通过入口点来递归处理代码，这入口点就是我们
 配置的需要保持的代码。学习如何配置ProGuard，这是使用ProGuard的最主要的部分。
 
     PS：这一部分内容可以查看ProGuard介绍网页：
@@ -146,7 +146,7 @@ ProGuard。
     PS:在我们单独使用*代表类名时，表示任意类名，否则,不单独使用仅匹配多个字符，例如Test*,表示Test1或TestWorld等，且不含
     有包分隔符，例如不能表示Test.World；
 　　
-　　我们在使用的时候，如何具体地写保持的内容呢？下面是完整的模板定义：
+    我们在使用的时候，如何具体地写保持的内容呢？下面是完整的模板定义：
 ```Java
 [@annotationtype] [[!]public|final|abstract|@ ...] [!]interface|class|enum classname
     [extends|implements [@annotationtype] classname]
@@ -293,7 +293,7 @@ ProGuard。
 
 #### 2.3 小结
 　　
-　　ProGuard的配置文件类似脚本文件，指令选项就是它的命令行。指令选项虽然有7种，不过Keep选项是ProGuard指令选项的主要部分，
+    ProGuard的配置文件类似脚本文件，指令选项就是它的命令行。指令选项虽然有7种，不过Keep选项是ProGuard指令选项的主要部分，
 学习掌握Keep选项和常用的指令选项可以让我们使用Android ProGuard事半功倍。
 
     PS：这一部分内容可以查看ProGuard使用指南：
