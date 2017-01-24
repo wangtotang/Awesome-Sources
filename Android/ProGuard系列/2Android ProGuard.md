@@ -230,7 +230,24 @@ android {
 ```ProGuard
 -keep public class MyClass
 ```
-　　除此之外，还可以在类、方法或字段上使用@Keep注解来配置保持代码。
+　　但是，有时候为了更好地处理代码，就要根据情况进行适当优化，例如：
+* Bean类
+　　
+
+　　很多时候Bean类都要保持，因为可能用到了自动映射的框架，大多数可能会全部保持,
+```ProGuard
+-kepp class com.your_package_name.bean.** { *; }
+```
+　　但是类名大多可以混淆，只保持其成员，
+```ProGuard
+-keepclassmembers class com.your_package_name.bean.** { *; }
+```
+* 依赖库类
+
+　　第三方框架很多时候提供的ProGuard配置都很简单粗暴，直接全部保持，导致代码十分臃肿，然而很多时候，我们只是用到了其中
+一部分功能，其他可以移除，减少程序体积。
+
+　　除在配置文件保持之外，还可以在类、方法或字段上使用@Keep注解来保持代码。
 　　
 
     PS：只有加上android.support.annotation库依赖，才可以使用@Keep注解。

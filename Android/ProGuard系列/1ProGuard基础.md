@@ -243,14 +243,15 @@ ProGuard。
 # 混淆后的类名为小写
 -dontusemixedcaseclassnames
 
-# 保持Annotations属性
+# 保持Annotations
 -keepattributes *Annotation*
 
-# 保持泛型属性
+# 保持泛型
 -keepattributes Signature
 
-# 保持代码行号
+# 保持文件属性和代码行号
 # 方便在异常分析中定位
+# SourceFile可能保留了重要的文件信息，如无必要，最好去掉
 -keepattributes SourceFile,LineNumberTable
 ```
 
