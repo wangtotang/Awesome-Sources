@@ -206,9 +206,9 @@ android {
 }
 ```
 　　每次构建过程中都会在`<module-name>/build/outputs/mapping/release/`目录下产生下列文件：
-* dump.txt：    说明APK中所有类文件的内部结构。
-* mapping.txt： 映射文件，包含原始->混淆过的类、方法和字段名称之间的映射关系。
-* seeds.txt：   列出未进行混淆的类和成员。
+* dump.txt：    说明APK中所有类文件的内部结构；
+* mapping.txt： 映射文件，包含原始->混淆过的类、方法和字段名称之间的映射关系；
+* seeds.txt：   列出未进行混淆的类和成员；
 * usage.txt：   列出从APK移除的代码。
 
 
