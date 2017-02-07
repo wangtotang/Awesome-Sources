@@ -130,4 +130,4 @@
 * [Simple-Xml](http://simple.sourceforge.net/)
 * [Tencent Bugly](http://bugly.qq.com/)
 
-[ProGuardRules]:https://github.com/wangtotang/ProGuardRules　
+[ProGuardRules]:https://github.com/wangtotang/ProGuardRules
