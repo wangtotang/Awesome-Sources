@@ -5,7 +5,7 @@
     　　这是这个系列的第三篇文章，主要是收集了我们常用到的ProGuard配置。
 
 　　本篇文章主要讲解[ProGuardRules](https://github.com/wangtotang/ProGuardRules)这个开源工程。
-　　
+
 　　这个工程项目收集了大量框架的ProGuard规则配置,在开发过程中，如果需要添加各个框架ProGuard的配置规则，可以参考
 工程下的Android·Library·Module的`proguardrules/rules`目录，一个文件就是一个框架的ProGuard规则。
 
