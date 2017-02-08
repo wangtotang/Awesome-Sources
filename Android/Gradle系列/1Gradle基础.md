@@ -11,6 +11,7 @@
  　　Gradle是一个类似Ant的项目自动化构建工具，但不使用XML进行配置，而是使用Groovy编写的
  DSL(特定领域语言)作为构建脚本。它广泛应用于Java生态，现在还可以用于C++项目上。在Android开发中，
  Google在Android Studio上采用了Gradle作为默认构建工具。
+
  　　尽管Gradle使用Groovy编写构建脚本，然而我们并不需要深入学习这门语言，因为Gradle提供了很多
  已经写好的DSL。如果需要扩展功能，就要熟悉Groovy，对于Java开发者来说，Groovy也是很容易入门的。
 
