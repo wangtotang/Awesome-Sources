@@ -296,4 +296,4 @@ AtomicReferenceFieldUpdater.newUpdater(SomeClass.class, SomeType.class, "someFie
      https://stuff.mit.edu/afs/sipb/project/android/sdk/android-sdk-linux/tools/proguard/docs/index.html#manual/examples.html
    [配置例子](https://stuff.mit.edu/afs/sipb/project/android/sdk/android-sdk-linux/tools/proguard/docs/index.html#manual/examples.html)
 
-[ProGuard Tools]:https://github.com/wangtotang/Awesome-Sources/blob/master/pictures/ProGuard_Tools.jpg
+[ProGuard Tools]:https://github.com/wangtotang/Awesome-Sources/blob/master/Android/pictures/ProGuard_Tools.jpg

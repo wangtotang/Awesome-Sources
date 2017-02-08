@@ -293,4 +293,4 @@ ProGuard。
     https://stuff.mit.edu/afs/sipb/project/android/sdk/android-sdk-linux/tools/proguard/docs/index.html#manual/usage.html。
    [使用指南](https://stuff.mit.edu/afs/sipb/project/android/sdk/android-sdk-linux/tools/proguard/docs/index.html#manual/usage.html)
 
-[ProGuard Progress]:https://github.com/wangtotang/Awesome-Sources/blob/master/pictures/ProGuard_Progress.png
+[ProGuard Progress]:https://github.com/wangtotang/Awesome-Sources/blob/master/Android/pictures/ProGuard_Progress.png
